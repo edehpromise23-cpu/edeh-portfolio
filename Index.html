@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+      <title>Edeh Promise - Developer</title>
+      
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!-- NAV -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <a href="#skills">Skills</a>
+  <button onclick="toggleTheme()" id="themeBtn">☀️</button>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="hero">
+  <div class="hero-content">
+    <img 
+      src="https://i.imgur.com/nyo0C7C.jpeg"
+      alt="Edeh Promise"
+      class="profile-pic">
+    <h1>Hi, I'm Edeh Promise</h1>
+    <h2>Self-taught Developer</h2>
+    <p>Building real projects from my phone. One day at a time.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="content-card">
+    <h2>About Me</h2>
+    <p>I am a self-taught web developer from Nigeria building projects using only a mobile phone. I believe in consistency, discipline, and improving one day at a time. After 180+ days of showing up, I continue to learn, build, and grow one project at a time.</p>
+  </div>
+</section>
+
+
+<section id="projects">
+  <div class="content-card">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Dev Tracker v2</h3>
+      <p>A personal life and coding tracker with XP system, milestones, calendar and daily habits.</p>
+      <a href="https://edehpromise23-cpu.github.io/tech-journey-V2/" target="_blank">View Live</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills">
+<section id="skills">
+  <div class="content-card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">CSS</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">PWA</span>
+      <span class="skill-tag">localStorage</span>
+      <span class="skill-tag">Git & GitHub</span>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="content-card">
+    <h2>Contact Me</h2>
+    <p>Want to work together or give feedback?</p>
+    <div class="contact-links">
+      <a href="mailto:edehpromise23@email.com" class="btn">✉️ Send Email</a>
+      <a href="https://github.com/edehpromise23-cpu" target="_blank" class="btn-outline">GitHub Profile</a>
+    </div>
+  </div>
+</section>
+    <script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+  let btn = document.getElementById("themeBtn");
+  btn.innerText = document.body.classList.contains("light") ? "🌙" : "☀️";
+}
+</script>
+    
+  
+<footer>
+  <p>Built by Edeh Promise &copy; 2026</p>
+  <p class="footer-sub">Made from a phone. No excuses.</p>
+</footer>
+</body>
+</html>
